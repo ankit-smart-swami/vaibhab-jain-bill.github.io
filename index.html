@@ -24,7 +24,7 @@
         </p>
       </div><!--End Info-->
       <div class="title">
-        <h1 contenteditable="true">Invoice #001</h1>
+        <h1 contenteditable="true" id="invoice-id">Invoice #001</h1>
         <p contenteditable="true">Issued: Aug 01, 2023</br>
            Payment Due: Aug 10, 2023
         </p>
@@ -133,7 +133,7 @@
 <button onclick="printDiv()" class="printButton">Print</button>
 <script>
     function printDiv() {
-        document.title = document.getElementById("client-name").innerHTML;
+        document.title = document.getElementById("invoice-id").innerHTML+ " " + document.getElementById("client-name").innerHTML;
         var printContents = document.getElementById("invoice").innerHTML;
         var originalContents = document.body.innerHTML;
 
