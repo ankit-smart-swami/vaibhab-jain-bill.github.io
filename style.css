@@ -1,127 +1,175 @@
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,900,700,500,300,100);
-*{
+
+* {
   margin: 0;
   box-sizing: border-box;
   font-size: 1.1rem;
 
 }
-body{
+
+body {
   font-family: 'Roboto', sans-serif;
-  background-image: url('');
-  background-repeat: repeat-y;
+  height: 900px;
 }
 
-h1{
+h1 {
   font-size: 1.5em;
   color: #222;
 }
 
-h2{
-    font-size: .9em;
+h2 {
+  font-size: .9em;
 }
 
-h3{
+h3 {
   font-size: 1.2em;
   font-weight: 300;
   line-height: 2em;
 }
 
-p{
+p {
   font-size: .7em;
   color: #666;
   line-height: 1.2em;
 }
 
-#invoiceholder{
-  width:100%;
+td{
+  padding: 10px 10px 10px 15px !important;
+}
+
+.bottom td{
+  padding: 7px !important;
+}
+
+#invoiceholder {
+  width: 100%;
   height: 80%;
 }
 
-#headerimage{
-  z-index:-1;
-  position:relative;
-  top: -50px;
-  height: 350px;    
-}
-#invoice{
-  position: relative;
-  top: -290px;
+#invoice {
   margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 30px 0 30px;
   width: 700px;
   background: #FFF;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
 }
 
-[id*='invoice-']{ /* Targets all id with 'col-' */
-  border-bottom: 1px solid #EEE;
-  padding: 30px;
+#invoice-top {
+  height: 120px;
+  border-bottom: 1px solid #c0c0c0b2;
 }
 
-#invoice-top{min-height: 140px;}
-#invoice-mid{min-height: 150px;}
-#invoice-bot{ min-height: 250px;}
+#invoice-mid {
+  margin: 15px 10px;
+  min-height: 120px;
+  border-bottom: 1px solid #c0c0c0b2;
+  display: flex;
+}
 
-.logo{
+#invoice-bot {
+  min-height: 250px;
+  margin: 30px 10px;
+}
+
+.logo {
   float: left;
-	height: 90px;
-	width: 90px;
-	background: url(Assets/logo.png) no-repeat;
-    background-size: 90px 90px;
+  height: 90px;
+  width: 90px;
+  background: url(Assets/logo.png) no-repeat;
+  background-size: 90px 90px;
 }
-.clientlogo{
-  float: left;
-	height: 60px;
-	width: 60px;
-	background: url(http://michaeltruong.ca/images/client.jpg) no-repeat;
-	background-size: 60px 60px;
+
+.clientlogo {
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+  background: url(http://michaeltruong.ca/images/client.jpg) no-repeat;
+  background-size: 60px 60px;
   border-radius: 50px;
 }
-.info{
+
+.info {
   display: block;
-  float:left;
+  float: left;
   margin-left: 20px;
 }
 
-.info p{
-    line-height: 1.3rem;
+.info p {
+  line-height: 1.3rem;
 }
-.title{
+
+.client-info{
+  display: flex;
+  width: 530px;
+  flex-wrap: wrap;
+  
+}
+
+.client-info p{
+  width: 260px;
+  padding: 5PX;
+}
+
+.title {
   float: right;
 }
-.title p{text-align: right;}
-#project{margin-left: 52%;}
-table{
+
+.title p {
+  text-align: right;
+  padding-top: 15px;
+  border-bottom: 1px solid #EEE;
+}
+
+#project {
+  margin-left: 52%;
+}
+
+table {
   width: 100%;
   border-collapse: collapse;
 }
-td{
+
+td {
   padding: 5px 0 5px 15px;
   border: 1px solid #EEE
 }
-.tabletitle{
+
+.tabletitle {
   padding: 5px;
   background: #EEE;
 }
-.service{border: 1px solid #EEE;}
-.item{width: 50%;}
-.itemtext{font-size: .9em;}
 
-#legalcopy{
+.service {
+  border: 1px solid #EEE;
+}
+
+.item {
+  width: 50%;
+}
+
+.itemtext {
+  font-size: .9em;
+}
+
+#legalcopy {
   margin-top: 30px;
 }
-form{
-  float:right;
+
+form {
+  float: right;
   margin-top: 30px;
   text-align: right;
 }
 
-#legalcopy{
-    text-align: center;
+#legalcopy {
+  text-align: center;
 }
 
-.printButton{
-    position: absolute;
-    top: 900px;
-    left: 50%
+.printButton {
+  margin: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
 }
