@@ -1,1 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,900,700,500,300,100);
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 900px;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #222;
+}
+
+h2 {
+  font-size: .9em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+p {
+  font-size: .7em;
+  color: #666;
+  line-height: 1.2em;
+}
+
+td{
+  padding: 10px 10px 10px 15px !important;
+}
+
+.bottom td{
+  padding: 7px !important;
+}
+
+#invoiceholder {
+  width: 100%;
+  height: 80%;
+}
+
+#invoice {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 30px 0 30px;
+  width: 700px;
+  background: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid transparent;
+}
+
+#invoice-top {
+  height: 120px;
+  border-bottom: 1px solid #c0c0c0b2;
+}
+
+#invoice-mid {
+  margin: 15px 10px;
+  min-height: 120px;
+  border-bottom: 1px solid #c0c0c0b2;
+  display: flex;
+}
+
+#invoice-bot {
+  min-height: 250px;
+  margin: 30px 10px;
+}
+
+.logo {
+  float: left;
+  height: 90px;
+  width: 90px;
+  background: url(Assets/logo.png) no-repeat;
+  background-size: 90px 90px;
+}
+
+.clientlogo {
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+  background: url(http://michaeltruong.ca/images/client.jpg) no-repeat;
+  background-size: 60px 60px;
+  border-radius: 50px;
+}
+
+.info {
+  display: block;
+  float: left;
+  margin-left: 20px;
+}
+
+.info p {
+  line-height: 1.3rem;
+}
+
+.client-info{
+  display: flex;
+  width: 530px;
+  flex-wrap: wrap;
+  
+}
+
+.client-info p{
+  width: 260px;
+  padding: 5PX;
+}
+
+.title {
+  float: right;
+}
+
+.title p {
+  text-align: right;
+  padding-top: 15px;
+  border-bottom: 1px solid #EEE;
+}
+
+#project {
+  margin-left: 52%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 0 5px 15px;
+  border: 1px solid #EEE
+}
+
+.tabletitle {
+  padding: 5px;
+  background: #EEE;
+}
+
+.service {
+  border: 1px solid #EEE;
+}
+
+.item {
+  width: 50%;
+}
+
+.itemtext {
+  font-size: .9em;
+}
+
+#legalcopy {
+  margin-top: 30px;
+}
+
+form {
+  float: right;
+  margin-top: 30px;
+  text-align: right;
+}
+
+#legalcopy {
+  text-align: center;
+}
+
+.printButton {
+  margin: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+}
